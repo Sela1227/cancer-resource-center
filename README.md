@@ -2,7 +2,7 @@
 
 管理營養物資、假髮租借、活動記錄、個案及轉介的整合系統。
 
-**當前版本：V1.0**
+**當前版本：V1.1**
 
 ## ⚠️ 重要警告
 
@@ -13,6 +13,15 @@
 ---
 
 ## 📋 版本歷史
+
+### V1.1 (2026-03-21)
+- 新增管理設定頁面（首頁右上角齒輪圖示）
+- 物資品項預設：可預設常用品牌/品名，新增時快速點選帶入
+- 新增物資發放時診間/醫師下拉選單（從設定維護）
+- 假髮申請基金會下拉選單（從設定維護）
+- 假髮租借預設金額（從設定維護）
+- 一鍵載入測試資料功能
+- 一鍵清除測試資料功能
 
 ### V1.0 (2026-03-21)
 - 初始版本
@@ -59,10 +68,10 @@ cancer-resource-center/
 │   ├── logo.jpg         # SELA Logo
 │   └── manifest.json    # PWA 設定
 ├── src/
-│   ├── components/      # 共用元件
-│   ├── pages/           # 頁面
+│   ├── components/      # 共用元件（Header、Modal、BottomNav、EmptyState）
+│   ├── pages/           # 頁面（Dashboard、Supplies、Wigs、Activities、Patients、Settings）
 │   ├── services/        # IndexedDB 服務層
-│   ├── types/           # TypeScript 型別
+│   ├── types/           # TypeScript 型別定義
 │   ├── utils.ts         # 工具函數
 │   └── version.ts       # 版本資訊
 ├── package.json
