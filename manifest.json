@@ -1,0 +1,22 @@
+{
+  "name": "彰濱癌症資源中心管理系統",
+  "short_name": "癌資中心",
+  "description": "彰濱癌症資源中心 - 物資、假髮、活動、個案管理",
+  "start_url": "/cancer-resource-center/",
+  "display": "standalone",
+  "background_color": "#FA7A35",
+  "theme_color": "#FA7A35",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/cancer-resource-center/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/cancer-resource-center/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
