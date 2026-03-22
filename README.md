@@ -2,7 +2,7 @@
 
 管理營養物資、假髮租借、活動記錄、個案及轉介的整合系統。
 
-**當前版本：V1.3**
+**當前版本：V1.4**
 
 ## ⚠️ 重要警告
 
@@ -13,6 +13,12 @@
 ---
 
 ## 📋 版本歷史
+
+### V1.4 (2026-03-22)
+- 版本號顯示於首頁 Logo 右下角 badge
+- 物資/假髮發放時，個案下拉可直接選「＋ 新增個案」即時建檔
+- 物資庫存改為品項分組（同品牌品名合併），點選展開各批到期日明細
+- 假髮庫存卡片改為緊湊小卡設計
 
 ### V1.3 (2026-03-22)
 - 版本號顯示於設定頁底部，含完整版本歷史
@@ -49,18 +55,18 @@ npm install
 npm run dev
 ```
 
-### 方式二：使用 Python 簡易伺服器
+### 方式二：Python 簡易伺服器
 
 ```bash
 cd dist && python3 -m http.server 8080
-# 開啟 http://localhost:8080
 ```
 
 ## 📱 手機測試
 
-1. 確保手機和電腦在同一個 WiFi
-2. 執行 `npm run dev -- --host`
-3. 在手機瀏覽器輸入終端機顯示的區網網址
+```bash
+npm run dev -- --host
+# 手機開啟終端機顯示的區網網址
+```
 
 ---
 
@@ -73,7 +79,7 @@ cancer-resource-center/
 │   ├── logo.jpg         # SELA Logo
 │   └── manifest.json    # PWA 設定
 ├── src/
-│   ├── components/      # Header、Modal、BottomNav、EmptyState
+│   ├── components/      # Header、Modal、BottomNav、EmptyState、QuickAddPatient
 │   ├── pages/           # Dashboard、Supplies、Wigs、Reports、Patients、Settings
 │   ├── services/        # IndexedDB 服務層
 │   ├── types/           # TypeScript 型別定義
